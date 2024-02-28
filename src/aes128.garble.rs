@@ -40,6 +40,7 @@
 //     sbox[x as usize]
 // }
 
+// Boyer/Perala circuit from [A depth-16 circuit for the AES S-box](https://eprint.iacr.org/2011/332.pdf)
 fn sbox(x: u8) -> u8 {
     let u0 = (x & 128u8) != 0u8;
     let u1 = (x & 64u8) != 0u8;
